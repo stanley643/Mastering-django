@@ -21,4 +21,6 @@ urlpatterns = [
     path('', include('listing.urls')),
     path('listing/<id>/', include('listing.urls')),
     path("add_listing/",include('listing.urls')),
+    path('listing/<pk>/edit/', include('listing.urls')),
+    path('listing/<pk>/delete/', include('listing.urls')),
 ]
