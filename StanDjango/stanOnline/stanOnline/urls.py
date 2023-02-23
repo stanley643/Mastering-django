@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('listing.urls')),
     path('listing/<id>/', include('listing.urls')),
+    path("add_listing/",include('listing.urls')),
 ]
