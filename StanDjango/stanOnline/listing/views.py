@@ -9,3 +9,10 @@ def listing_list(request):
         "listing": listing
     }
     return render(request, "listings.html", context)
+
+def listing_retrieve(request, id):
+    listing = Listing.objects.get(id=id)
+    context = {
+        "listing": listing
+    }
+    return render(request, "listing.html", context)
