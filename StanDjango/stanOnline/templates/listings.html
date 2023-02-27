@@ -5,6 +5,7 @@
 {% for listings in listing %}
 <div class="px-3 py-2 bg-gray-100 rounded-sm">
     <h3 class="text-3xl text-gray-900">{{ listings.title }}</h3>
+    <img src="{{ listing.image.url }}" alt="">
      <a href="/listing/{{ listings.id }}/" class="text-blue-500">
         View details
      </a>

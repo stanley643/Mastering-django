@@ -7,6 +7,7 @@ class Listing(models.Model):
     num_beds= models.IntegerField()
     num_baths= models.IntegerField()
     address=models.CharField(max_length=150)
+    image = models.ImageField()
 
     def __str__(self):
         return self.title
