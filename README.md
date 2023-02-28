@@ -1,5 +1,6 @@
 # Mastering-django
 Basics of django
+
 Contributing
 
 If you would like to contribute to the development of the farm recording system, please follow these steps:
