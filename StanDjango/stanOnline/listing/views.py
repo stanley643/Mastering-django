@@ -34,7 +34,7 @@ def listing_update(request, pk):
     listing = Listing.objects.get(id=pk)
     form = ListingForm(instance=listing)
     if request.method == "POST":
-        form = ListingForm(request.POST, instance=listing)
+        form = ListingForm(request.POST, instance=listing, files=request.FILES)
         if form.is_valid():
             form.save() #this will create a new list
             return redirect("/")
